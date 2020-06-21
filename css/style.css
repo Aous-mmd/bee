@@ -1,0 +1,57 @@
+header .lab-nav nav {
+  background: #f69520 !important;
+}
+
+header .lab-nav nav .uk-navbar-left ul li {
+  margin-left: 100px !important;
+}
+
+header .lab-nav nav .uk-navbar-left ul li a {
+  color: #fff;
+}
+
+header .lab-nav nav .uk-navbar-right ul li a {
+  color: #fff !important;
+}
+
+header .lab-nav nav .uk-navbar-right ul li:last-child {
+  margin-right: 100px !important;
+}
+
+.slider .upper img {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.slider .middle {
+  overflow: hidden;
+}
+
+.slider .middle p {
+  margin-top: 1060px !important;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #666;
+}
+
+.slider .middle p span {
+  color: #f69520;
+  font-weight: inherit;
+}
+
+.slider .middle img {
+  z-index: 0;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  width: 100%;
+}
+
+.slider .bottom img {
+  width: 100%;
+  position: absolute;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-top: -40px;
+}
+/*# sourceMappingURL=style.css.map */
