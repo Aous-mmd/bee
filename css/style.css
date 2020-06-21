@@ -18,6 +18,11 @@ header .lab-nav nav .uk-navbar-right ul li:last-child {
   margin-right: 100px !important;
 }
 
+.slider {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
 .slider .upper img {
   width: 100%;
   position: absolute;
@@ -28,23 +33,41 @@ header .lab-nav nav .uk-navbar-right ul li:last-child {
   overflow: hidden;
 }
 
-.slider .middle p {
-  margin-top: 1060px !important;
+.slider .middle .TitleMargin .uk-position-center {
+  top: 90%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.slider .middle .TitleMargin .uk-position-center p {
   font-size: 40px;
   font-weight: bolder;
   color: #666;
 }
 
-.slider .middle p span {
+.slider .middle .TitleMargin .uk-position-center p span {
   color: #f69520;
   font-weight: inherit;
 }
 
 .slider .middle img {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   z-index: 0;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
   width: 100%;
+}
+
+.slider .middle:hover img {
+  -webkit-transform: translate3d(0%, -25.65%, 0px) scale(1.57);
+          transform: translate3d(0%, -25.65%, 0px) scale(1.57);
+}
+
+.slider .middle:hover .uk-position-center {
+  top: 50%;
+  opacity: 1;
 }
 
 .slider .bottom img {
@@ -53,5 +76,111 @@ header .lab-nav nav .uk-navbar-right ul li:last-child {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   margin-top: -40px;
+}
+
+.cake .cake-sec {
+  padding: 100px 0px;
+  font-weight: bold;
+}
+
+.cake .cake-sec h2,
+.cake .cake-sec p {
+  margin-top: -50px;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.cake .cake-sec h2 {
+  color: #f69520;
+}
+
+.cake .cake-sec p {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #666;
+  font-size: 20px;
+}
+
+.cake .cake-sec img {
+  margin-top: 50px;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.cake:hover h2,
+.cake:hover p {
+  margin-top: 0;
+  opacity: 1;
+}
+
+.cake:hover img {
+  margin-top: 0;
+  opacity: 1;
+}
+
+.fruits {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.fruits .fupper img {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.fruits .fmiddle {
+  overflow: hidden;
+}
+
+.fruits .fmiddle .fruitsMargin {
+  z-index: 1;
+  position: absolute;
+  margin: -235px auto;
+  width: 100%;
+}
+
+.fruits .fmiddle .fruitsMargin .fruits-hover {
+  opacity: 0;
+  margin-top: 122px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-weight: bold;
+}
+
+.fruits .fmiddle .fruitsMargin .fruits-hover h3 {
+  color: #f69520;
+}
+
+.fruits .fmiddle .fruitsMargin .fruits-hover p {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #666;
+}
+
+.fruits .fmiddle img {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+  width: 100%;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.fruits .fmiddle:hover img {
+  -webkit-transform: translate3d(0%, 13.35%, 0px) scale(1.27);
+          transform: translate3d(0%, 13.35%, 0px) scale(1.27);
+}
+
+.fruits .fmiddle:hover .fruits-hover {
+  margin-top: 0;
+  opacity: 1;
+}
+
+.sandwich {
+  background: #f69520;
 }
 /*# sourceMappingURL=style.css.map */
