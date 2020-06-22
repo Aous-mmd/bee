@@ -1,0 +1,51 @@
+%!Adobe-FontList 1.20
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:CandyCake
+FamilyName:Candy Cake
+StyleName:Regular
+FullName:Candy Cake
+MenuName:Candy Cake
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Firas\5  5  2020 FinalDesign\6  11  2020\bee\Font\CANDY CAKE.TTF
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:71856
+FileModTime:1591869871
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Candy Cake
+NameArray:0,Win,1,Candy Cake
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Cherio
+FamilyName:Cherio
+StyleName:Regular
+FullName:Cherio
+MenuName:Cherio
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Firas\5  5  2020 FinalDesign\6  11  2020\bee\Font\CHERIO.TTF
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:54100
+FileModTime:1591869896
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,Cherio
+NameArray:0,Mac,4,Cherio
+NameArray:0,Win,1,Cherio
+NameArray:0,Win,16,Cherio
+%EndFont
+
