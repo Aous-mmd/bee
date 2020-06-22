@@ -192,44 +192,11 @@ header .mob-nav .bg-light .collapse ul li a {
 }
 
 .sandwich {
-  /* equal card height */
-  /* ensure equal card height inside carousel */
-  /* prevent flicker during transition */
-  /* control image height */
+  background: #f69520;
 }
 
-.sandwich .row-equal > div[class*='col-'] {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-}
-
-.sandwich .row-equal .card {
-  width: 100%;
-}
-
-.sandwich .carousel-inner > .row-equal.active,
-.sandwich .carousel-inner > .row-equal.next,
-.sandwich .carousel-inner > .row-equal.prev {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.sandwich .carousel-inner > .row-equal.active.left,
-.sandwich .carousel-inner > .row-equal.active.right {
-  opacity: 0.5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.sandwich .card-img-top-250 {
-  max-height: 250px;
-  overflow: hidden;
+.sandwich .uk-position-relative {
+  padding: 60px 100px;
 }
 
 @media (max-width: 650px) {
