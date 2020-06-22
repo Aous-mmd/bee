@@ -18,6 +18,22 @@ header .lab-nav nav .uk-navbar-right ul li:last-child {
   margin-right: 100px !important;
 }
 
+header .mob-nav {
+  display: none;
+}
+
+header .mob-nav .bg-light {
+  background-color: #f69520 !important;
+}
+
+header .mob-nav .bg-light a {
+  color: #fff;
+}
+
+header .mob-nav .bg-light .collapse ul li a {
+  color: #fff;
+}
+
 .slider {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -121,11 +137,6 @@ header .lab-nav nav .uk-navbar-right ul li:last-child {
   opacity: 1;
 }
 
-.fruits {
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
 .fruits .fupper img {
   width: 100%;
   position: absolute;
@@ -145,7 +156,7 @@ header .lab-nav nav .uk-navbar-right ul li:last-child {
 
 .fruits .fmiddle .fruitsMargin .fruits-hover {
   opacity: 0;
-  margin-top: 122px;
+  margin-top: 50px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   font-weight: bold;
@@ -170,7 +181,7 @@ header .lab-nav nav .uk-navbar-right ul li:last-child {
           transform: translateY(10%);
 }
 
-.fruits .fmiddle:hover img {
+.fruits .fmiddle:hover #fruit-img {
   -webkit-transform: translate3d(0%, 13.35%, 0px) scale(1.27);
           transform: translate3d(0%, 13.35%, 0px) scale(1.27);
 }
@@ -181,6 +192,107 @@ header .lab-nav nav .uk-navbar-right ul li:last-child {
 }
 
 .sandwich {
-  background: #f69520;
+  /* equal card height */
+  /* ensure equal card height inside carousel */
+  /* prevent flicker during transition */
+  /* control image height */
+}
+
+.sandwich .row-equal > div[class*='col-'] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.sandwich .row-equal .card {
+  width: 100%;
+}
+
+.sandwich .carousel-inner > .row-equal.active,
+.sandwich .carousel-inner > .row-equal.next,
+.sandwich .carousel-inner > .row-equal.prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sandwich .carousel-inner > .row-equal.active.left,
+.sandwich .carousel-inner > .row-equal.active.right {
+  opacity: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sandwich .card-img-top-250 {
+  max-height: 250px;
+  overflow: hidden;
+}
+
+@media (max-width: 650px) {
+  header .lab-nav {
+    display: none;
+  }
+  header .mob-nav {
+    display: block;
+  }
+  .slider .upper img {
+    -webkit-transform: translateY(126%) scale(3.57);
+            transform: translateY(126%) scale(3.57);
+  }
+  .slider .middle img {
+    height: 35vh;
+  }
+  .slider .middle .TitleMargin .uk-position-center {
+    top: 40%;
+  }
+  .slider .middle .TitleMargin .uk-position-center p {
+    font-size: 16px;
+  }
+  .slider .middle:hover .uk-position-center {
+    top: 26%;
+  }
+  .slider .bottom img {
+    -webkit-transform: translateY(126%) scale(3.57) rotate(180deg);
+            transform: translateY(126%) scale(3.57) rotate(180deg);
+  }
+  .cake .offset-md-2 {
+    display: none;
+  }
+  .cake .cake-sec {
+    padding: 20px 10px;
+    text-align: center;
+  }
+  .cake .cake-sec h2,
+  .cake .cake-sec p {
+    font-size: 18px;
+  }
+  .cake .cake-sec h2 {
+    font-weight: bolder;
+  }
+  .cake .cake-sec img {
+    width: 80%;
+  }
+  .fruits .fupper img {
+    -webkit-transform: translateY(54%) scale(2.07);
+            transform: translateY(54%) scale(2.07);
+  }
+  .fruits .fmiddle #fruit-img {
+    width: 100%;
+    height: 170px;
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+  .fruits .fmiddle .fruitsMargin {
+    margin: -80px auto;
+  }
+  .fruits .fmiddle .fruitsMargin .fruits-hover h3,
+  .fruits .fmiddle .fruitsMargin .fruits-hover p {
+    font-size: 15px;
+    font-weight: bolder;
+  }
 }
 /*# sourceMappingURL=style.css.map */
