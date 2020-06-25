@@ -7,6 +7,9 @@
     <title>Bee</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,9 +20,11 @@
                 <nav class="uk-navbar-container" uk-navbar>
                     <div class="uk-navbar-left">
                         <ul class="uk-navbar-nav">
-                            <li><a href="#">
+                            <li>
+                                <a href="#">
                                     <img class="img-fluid" src="images/Group 40.svg" alt="">
-                                </a></li>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div class="uk-navbar-right">
@@ -44,7 +49,9 @@
             </div>
             <div class="mob-nav">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Navbar</a>
+                    <a href="#">
+                        <img class="img-fluid" src="images/Group 40.svg" alt="">
+                    </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -80,7 +87,7 @@
         </header>
         <section class="slider">
             <div class="upper">
-                <img src="images/Group 4.svg">
+                <img src="images/org.svg">
             </div>
             <div class="middle">
                 <img src="images/slider-1.png" alt="">
@@ -90,6 +97,26 @@
                             <span>Bee</span> is a place which makes you escape from your<br>daily routines to get some
                             rest
                         </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fruits">
+            <div class="fupper">
+                <img src="images/Group 15.svg" alt="">
+            </div>
+            <div class="fmiddle text-center">
+                <img src="images/img-bg-1.png" alt="" id="fruit-img">
+                <div class="fruitsMargin">
+                    <div class="fruits-hover">
+                        <h3>Branches</h3>
+                        <p class="uk-margin-remove">
+                            Bee is a high end bakery shop with two branches
+                        </p>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Mazzeh</button>
+                            <button type="submit" class="btn btn-primary">Salhiyeh</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -119,157 +146,74 @@
                 </div>
             </div>
         </section>
-        <section class="fruits">
+        <section class="sandwich">
             <div class="fupper">
-                <img src="images/Group 15.svg" alt="">
+                <img src="images/bazka.svg" alt="">
             </div>
-            <div class="fmiddle text-center">
-                <img src="images/img-bg-1.png" alt="" id="fruit-img">
-                <div class="fruitsMargin">
-                    <div class="fruits-hover">
-                        <h3>Branches</h3>
-                        <p class="uk-margin-remove">
-                            Bee is a high end bakery shop with two branches
-                        </p>
+            <div class="text-center">
+                OUR MENUS
+            </div>
+            <div class="slick">
+                <div class="uk-card uk-card-default"
+                    uk-toggle="target: .tog-text-animation-4; animation: uk-animation-fade; queued: true; duration: 300;mode: hover">
+                    <div class="uk-card-media-top">
+                        <img src="images/slider-4.png" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p class="tog-text-animation-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt.</p>
+                        <p class="tog-text-animation-4" hidden>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod
+                            tempor incididunt. asdsadsad</p>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="sandwich">
-            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
-                uk-slider="autoplay: true;autoplay-interval:3000;">
-                <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-3@m uk-grid">
-                    <li>
-                        <div class="uk-panel">
-                            <div>
-                                <div class="uk-card uk-card-default" uk-toggle="target: .tog-text-animation-1; animation: uk-animation-fade; queued: true; duration: 300;mode: hover">
-                                    <div class="uk-card-media-top">
-                                        <img src="images/slider-1.png" alt="">
-                                    </div>
-                                    <div class="uk-card-body">
-                                        <h3 class="uk-card-title">Media Top</h3>
-                                        <p
-                                            class="tog-text-animation-1">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor incididunt.</p>
-                                        <p class="tog-text-animation-1"
-                                            hidden>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt. asdsadsad</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-panel">
-                            <div>
-                                <div class="uk-card uk-card-default" uk-toggle="target: .tog-text-animation-2; animation: uk-animation-fade; queued: true; duration: 300;mode: hover">
-                                    <div class="uk-card-media-top">
-                                        <img src="images/slider-1.png" alt="">
-                                    </div>
-                                    <div class="uk-card-body">
-                                        <h3 class="uk-card-title">Media Top</h3>
-                                        <p
-                                            class="tog-text-animation-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor incididunt.</p>
-                                        <p class="tog-text-animation-2"
-                                            hidden>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt. asdsadsad</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-panel">
-                            <div>
-                                <div class="uk-card uk-card-default" uk-toggle="target: .tog-text-animation-3; animation: uk-animation-fade; queued: true; duration: 300;mode: hover">
-                                    <div class="uk-card-media-top">
-                                        <img src="images/slider-1.png" alt="">
-                                    </div>
-                                    <div class="uk-card-body">
-                                        <h3 class="uk-card-title">Media Top</h3>
-                                        <p
-                                            class="tog-text-animation-3">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor incididunt.</p>
-                                        <p class="tog-text-animation-3"
-                                            hidden>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt. asdsadsad</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-panel">
-                            <div>
-                                <div class="uk-card uk-card-default" uk-toggle="target: .tog-text-animation-4; animation: uk-animation-fade; queued: true; duration: 300;mode: hover">
-                                    <div class="uk-card-media-top">
-                                        <img src="images/slider-1.png" alt="">
-                                    </div>
-                                    <div class="uk-card-body">
-                                        <h3 class="uk-card-title">Media Top</h3>
-                                        <p
-                                            class="tog-text-animation-4">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor incididunt.</p>
-                                        <p class="tog-text-animation-4"
-                                            hidden>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt. asdsadsad</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-panel">
-                            <div>
-                                <div class="uk-card uk-card-default" uk-toggle="target: .tog-text-animation-5; animation: uk-animation-fade; queued: true; duration: 300;mode: hover">
-                                    <div class="uk-card-media-top">
-                                        <img src="images/slider-1.png" alt="">
-                                    </div>
-                                    <div class="uk-card-body">
-                                        <h3 class="uk-card-title">Media Top</h3>
-                                        <p
-                                            class="tog-text-animation-5">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor incididunt.</p>
-                                        <p class="tog-text-animation-5"
-                                            hidden>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt. asdsadsad</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-panel">
-                            <div>
-                                <div class="uk-card uk-card-default" uk-toggle="target: .tog-text-animation-6; animation: uk-animation-fade; queued: true; duration: 300;mode: hover">
-                                    <div class="uk-card-media-top">
-                                        <img src="images/slider-1.png" alt="">
-                                    </div>
-                                    <div class="uk-card-body">
-                                        <h3 class="uk-card-title">Media Top</h3>
-                                        <p
-                                            class="tog-text-animation-6">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor incididunt.</p>
-                                        <p class="tog-text-animation-6"
-                                            hidden>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt. asdsadsad</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <a class="uk-position-center-left uk-position-large" id="left" href="#" uk-slidenav-previous
-                    uk-slider-item="previous"></a>
-                <a class="uk-position-center-right uk-position-large" id="right" href="#" uk-slidenav-next
-                    uk-slider-item="next"></a>
+                <div class="uk-card uk-card-default"
+                    uk-toggle="target: .tog-text-animation-5; animation: uk-animation-fade; queued: true; duration: 300;mode: hover">
+                    <div class="uk-card-media-top">
+                        <img src="images/slider-5.png" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p class="tog-text-animation-5">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt.</p>
+                        <p class="tog-text-animation-5" hidden>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod
+                            tempor incididunt. asdsadsad</p>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default"
+                    uk-toggle="target: .tog-text-animation-6; animation: uk-animation-fade; queued: true; duration: 300;mode: hover">
+                    <div class="uk-card-media-top">
+                        <img src="images/slider-6.png" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p class="tog-text-animation-6">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt.</p>
+                        <p class="tog-text-animation-6" hidden>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod
+                            tempor incididunt. asdsadsad</p>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default"
+                    uk-toggle="target: .tog-text-animation-7; animation: uk-animation-fade; queued: true; duration: 300;mode: hover">
+                    <div class="uk-card-media-top">
+                        <img src="images/slider-7.png" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Media Top</h3>
+                        <p class="tog-text-animation-7">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt.</p>
+                        <p class="tog-text-animation-7" hidden>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod
+                            tempor incididunt. asdsadsad</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="map">
@@ -306,45 +250,25 @@
                     </div>
                 </form>
             </div>
-        </section>
-        <section class="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-1">
-                        <div class="left-side">
-                            <h3>About Us</h3>
-                            <p>Bee is a place which makes you escape from your daily routines to get more rest</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-1">
-                        <div class="middle">
-                            <img src="images/Group 40.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-1">
-                        <div class="right-side">
-                            <h3>About Us</h3>
-                            <p>Bee is a place which makes you escape from your daily routines to get more rest</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="bee">
+                <img src="images/bee.png" alt="">
             </div>
         </section>
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-1">
-                        <div class="footer-left">
-                            <h4>Work Time</h4>
-                            <span class="days">Monday - Friday</span><br>
-                            <span>8:00 AM - 8:00 PM</span>
-                            <br><br>
-                            <span class="days">Monday - Friday</span><br>
-                            <span>8:00 AM - 8:00 PM</span>
+                        <div class="footer-right">
+                            <h4>
+                                About US
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod
+                                tempor incididunt. asdsadsad</p>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-1">
-                        <div class="footer-middle">
+                        <div class="footer-middle text-center">
                             <h4>Links</h4>
                             <ul>
                                 <li><a href=""><span></span>HOME</a></li>
@@ -356,43 +280,28 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-1">
-                        <div class="footer-right">
-                            <div class="text-center">
-                                <h4>Social media</h4>
-                                <div class="icons">
-                                    <a href="" class="uk-icon-link" uk-icon="facebook"></a>
-                                    <a href="" class="uk-icon-link" uk-icon="twitter"></a>
-                                    <a href="" class="uk-icon-link" uk-icon="youtube"></a>
-                                    <a href="" class="uk-icon-link" uk-icon="instagram"></a>
-                                    <a href="" class="uk-icon-link" uk-icon="google-plus"></a>
-                                </div>
-                            </div>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-1">
-                                        <p style="justify-content: center;">
-                                            Core Branch:<br>
-                                            Damascus - Mazzeh Highway<br>
-                                            Tel: 9232 - 011-6110951<br>
-                                            Mob: 0991384000<br>
-                                            Whatsapp: 0992131116
-                                        </p>
-                                    </div>
-                                    <div class="col-md-6 col-sm-1">
-                                        <p style="justify-content: center;">
-                                            Branch 2:<br>
-                                            Damascus - Salhiyeh st.<br>
-                                            before aAl-Sham Hotel<br>
-                                            Tel: 011-2266777 011-2266444<br>
-                                            Whatsapp: 0996850000
-                                        </p>
-                                    </div>
-                                </div>
+                        <div class="footer-left text-center">
+                            <h4>Work Time</h4>
+                            <span class="days">Monday - Friday</span><br>
+                            <span>8:00 AM - 8:00 PM</span>
+                            <br>
+                            <span class="days">Monday - Friday</span><br>
+                            <span>8:00 AM - 8:00 PM</span>
+                            <h4 id="social">Social media</h4>
+                            <div class="icons">
+                                <a href="" class="uk-icon-link" uk-icon="facebook"></a>
+                                <a href="" class="uk-icon-link" uk-icon="twitter"></a>
+                                <a href="" class="uk-icon-link" uk-icon="youtube"></a>
+                                <a href="" class="uk-icon-link" uk-icon="instagram"></a>
+                                <a href="" class="uk-icon-link" uk-icon="google-plus"></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <a href="#" uk-scroll>
+                <img src="images/white.svg" onclick="topFunction()" id="mysBtn" />
+            </a>
         </footer>
     </main>
     <div class="copyright"></div>
@@ -401,6 +310,7 @@
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
     <script src="js/anime.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
